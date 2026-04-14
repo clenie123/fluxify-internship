@@ -1,0 +1,206 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+/* LAYOUT */
+.app-layout {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: linear-gradient(180deg, #0f172a, #1e293b);
+  color: white;
+  padding: 20px;
+  position: fixed;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  margin-bottom: 10px;
+  color: #cbd5f5;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* MAIN CONTENT */
+.main {
+  margin-left: 260px;
+  padding: 25px;
+}
+
+/* HEADINGS */
+h1 {
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PRODUCT CARD */
+.product-card {
+  text-align: center;
+}
+
+.price {
+  font-size: 20px;
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+/* DETAIL CARD */
+.detail-card {
+  max-width: 400px;
+}
+
+/* STAT CARDS */
+.stat {
+  text-align: center;
+}
+
+.stat p {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* TABLE */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th {
+  background: #0f172a;
+  color: white;
+  padding: 12px;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.table tr:hover {
+  background: #f8fafc;
+}
+
+/* STATUS */
+.status {
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+}
+
+.status.pending {
+  background: #f59e0b;
+}
+
+.status.delivered {
+  background: #22c55e;
+}
+
+/* FORM */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3b82f6;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 5px;
+}
+
+button:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+/* DELETE BUTTON */
+button:last-child {
+  background: #ef4444;
+}
+
+button:last-child:hover {
+  background: #dc2626;
+}
+/* CART */
+.cart {
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  width: 250px;
+}
+
+/* BUTTON STYLE */
+button {
+  background: #2563eb;
+}
+
+button:hover {
+  background: #1d4ed8;
+}

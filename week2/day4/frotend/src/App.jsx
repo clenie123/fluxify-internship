@@ -1,23 +1,27 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/layout/Navbar";
 import Dashboard from "./components/layout/Dashboard";
+import Customers from "./pages/Customers";
+import Products from "./pages/Products";
+import Orders from "./pages/Orders";
+import OrderItems from "./pages/OrderItems";
 
-import CustomerList from "./components/customers/CustomerList";
-import ProductList from "./components/products/ProductList";
-import OrderList from "./components/orders/OrderList";
-import OrderItemList from "./components/orderItems/OrderItemList";
+import "./styles.css";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
 
-      <Dashboard />
-
-      <CustomerList />
-      <ProductList />
-      <OrderList />
-      <OrderItemList />
-    </div>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/customers" element={<Customers />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/order-items" element={<OrderItems />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

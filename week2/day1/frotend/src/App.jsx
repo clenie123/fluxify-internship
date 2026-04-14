@@ -1,25 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Navbar from "./Navbar";
-
-// Pages
-import Dashboard from "./pages/Dashboard";
-import Products from "./pages/Products";
-import Customers from "./pages/Customers";
-import Orders from "./pages/Orders";
+import Navbar from "./components/Navbar";
+import "./styles.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/customers" element={<Customers />} />
-        <Route path="/orders" element={<Orders />} />
-      </Routes>
-    </BrowserRouter>
+      <div className="container">
+        <h1>Home Page</h1>
+        <p>This is Day 1 React project</p>
+      </div>
+    </div>
   );
 }
 
